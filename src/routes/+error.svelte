@@ -1,1 +1,1 @@
-<h1>"Error! Page not found"</h1>
+<h1 class="text-red-500">"Error! Page not found"</h1>
