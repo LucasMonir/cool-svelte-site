@@ -1,6 +1,7 @@
 <script>
+        import {page} from "$app/stores";
         const links = [
-                { name: "Home", route: "" },
+                { name: "Home", route: "/" },
                 { name: "About", route: "/about" },
                 { name: "Contact", route: "/contact" },
                 { name: "Doubts", route: "/doubts" },
@@ -10,6 +11,6 @@
         const activeClass = normalClass + "border-b-2 border-blue-500";
 </script>
 
-{#each links as { name, route }, i}
-        <a href={route} class={i == 0 ? activeClass : normalClass}>{name}</a>
+{#each links as { name, route }}
+        <a href={route} class={$page.url.pathname === route ? activeClass : normalClass}>{name}</a>
 {/each}

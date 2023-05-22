@@ -1,4 +1,4 @@
-<img src="img.png" class="img mr-5">
+<img src="img.png" class="img mr-5" alt="amanita muscaria mushroom">
 
 <style>
     .img{
